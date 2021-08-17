@@ -4,7 +4,7 @@ type CurrentObject = Record<
 >;
 type ResultObject = Record<string, string>;
 
-{
+
   const getObjPropsToSrting = (currentObject: CurrentObject): ResultObject => {
     let obj = { ...currentObject };
     for (let key in obj) {
@@ -13,5 +13,5 @@ type ResultObject = Record<string, string>;
 
     return obj as ResultObject;
   };
-}
+
 // You can use this function if you want all property values ​​of an object to be strings. Suitable only for simple objects
